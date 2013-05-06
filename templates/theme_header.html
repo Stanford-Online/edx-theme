@@ -1,0 +1,21 @@
+<%namespace name='static' file='/static_content.html'/>
+<%inherit file="/navigation.html"/>
+<%page args="suppress_toplevel_navigation=False"/>
+
+<%block name="navigation_top">
+  <div id="su-header">
+    <div class="container">
+      <a href="http://www.stanford.edu">
+        <img src="https://www.stanford.edu/su-identity/images/brandbar-stanford-logo@2x.png" alt="Stanford University" width="152" height="23">
+      </a>
+    </div>
+  </div>
+</%block>
+
+<%block name="navigation_logo">
+  <img src="${static.url('images/stanford-2-logo.png')}" style="margin-top: -5px;" width="50" height="50" />
+</%block>
+
+<%block name="navigation_secondary_links">
+  <a href="${self.attr.reverse('about_edx')}">About</a>
+</%block>
