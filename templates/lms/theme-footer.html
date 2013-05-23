@@ -1,0 +1,42 @@
+## mako
+<%! from django.core.urlresolvers import reverse %>
+<footer>
+  <nav>
+    <section class="top" style="border-bottom: 0;">
+      <section class="primary">
+        <a href="${reverse('tos')}">Terms of Service</a>
+        <a href="${reverse('tos')}#privacy">Privacy Policy</a>
+        <a href="${reverse('tos')}#honor">Honor Code</a>
+        <a href="${reverse('tos')}#copyright">Copyright</a>
+        <a href="${reverse('about_edx')}#contact">Contact</a>
+      </section>
+      <section class="social">
+        <span>Built on the edX platform.</span>
+      </section>
+    </section>
+  </nav>
+</footer>
+
+<div id="su-footer">
+  <div class="su-container">
+    <div class="su-row">
+      <div id="su-footer-logo" class="span2">
+        <a href="http://www.stanford.edu">
+          <img src="https://www.stanford.edu/su-identity/images/footer-stanford-logo@2x.png" alt="Stanford University" width="105" height="49"/>
+        </a>
+      </div>
+      <div id="su-footer-text" class="span10">
+        <ul>
+          <li class="home"><a href="http://www.stanford.edu">SU Home</a></li>
+          <li class="maps alt"><a href="http://visit.stanford.edu/plan/maps.html">Maps &amp; Directions</a></li>
+          <li class="search-stanford"><a href="http://www.stanford.edu/search/">Search Stanford</a></li>
+          <li class="terms alt"><a href="http://www.stanford.edu/site/terms.html">Terms of Use</a></li>
+          <li class="copyright"><a href="http://www.stanford.edu/site/copyright.html">Copyright Complaints</a></li>
+        </ul>
+        <div class="clear"></div>
+        <p class="copyright vcard">&copy; <span class="fn org">Stanford University</span>, <span class="adr"> <span class="locality">Stanford</span>, <span class="region">California</span> <span class="postal-code">94305</span> </span></p>
+      </div>
+      <div style="clear: both;"></div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,125 @@
+/****************************************************************************************************
+*   Stanford Theming File
+*
+*   Contains all the theme color definitions for the Stanford Open Source MOOC Project
+*
+****************************************************************************************************/
+
+//-----------------
+//  Color variables (from Stanford palette unless noted)
+//-----------------
+
+//Cardinal Color Variables
+$cardinal-red: #8C1515;
+$dark-red: #820000; //Link Color
+$cardinal-light: #c83737; //Selected Header BG Color, ie. calendar        ***Custom, not from palette***
+$cardinal-bg: #e9afaf; //Selected Content BG Color, ie. calendar          ***Custom, not from palette***
+
+//Beige Color Variables
+$beige: #9d9573;
+$beige-60: lighten($beige, 18.5%); //Main Border/HR Color
+$beige-25: lighten($beige, 25%); 
+
+//Sandstone Color Variables
+$sandstone: #ddcf99;
+$sandstone-50: lighten($sandstone, 9%);
+$sandstone-25: lighten($sandstone, 20%); //Important Heading BG Color 
+
+//Gray Color Variables
+$gray: #3f3c30; //Main Text Color
+$gray-75: lighten($gray, 18.25%); //Lighter Text Color
+
+$gray-3: #e9e6df; //Block/Course BG Color
+$gray-2: #f2f1eb;
+$gray-1: #fbfbf9; //Main BG Color
+
+
+
+
+//-----------------
+//  Font Assignment
+//-----------------
+
+$theme-sans-font: 'Source Sans';
+$sans-serif: $theme-sans-font, $sans-serif;
+$body-font-family: $sans-serif;
+
+$theme-serif-font: 'Crimson Text';
+$serif: $theme-serif-font, $serif;
+
+
+
+
+//-----------------
+//  Theme Element Assignments
+//-----------------
+
+$body-bg: $gray-1;
+$content-wrapper-bg: $gray-1;
+$header-image: none;
+$header-bg: transparentize(lighten($sandstone, 18.5%), .25);
+$courseware-header-image: none;
+$courseware-header-bg: transparentize(lighten($sandstone, 18.5%), .25);
+$footer-bg: $sandstone-25;
+$courseware-footer-border: 1px solid $beige-60;
+$courseware-footer-shadow: box-shadow(2px 1px 0 rgba(0, 0, 0, .1));
+$courseware-footer-margin: 50px;
+
+$faded-hr-image-1: linear-gradient($beige-60 0%, $beige-60);
+$faded-hr-image-2: linear-gradient($beige-60 0%, $beige-60);
+$faded-hr-image-3: linear-gradient($beige-60 0%, $beige-60);
+$faded-hr-image-4: linear-gradient($beige-60 0%, $beige-60);
+$faded-hr-image-5: linear-gradient($beige-60 0%, $beige-60);
+$faded-hr-image-6: linear-gradient($beige-60 0%, $beige-60);
+
+$base-font-color: $gray;
+$lighter-base-font-color: $gray-75;
+$very-light-text: $gray-1;
+
+$link-color: $dark-red;
+$link-hover: $cardinal-light;
+$selection-color-1: $cardinal-bg;
+$selection-color-2: $cardinal-bg;
+$site-status-color: $cardinal-bg;
+
+$button-color: $cardinal-red;
+$button-archive-color: $gray-3;
+
+$shadow-color: $gray;
+
+$button-bg-image: none;
+$button-bg-color: $gray-3;
+$button-bg-hover-color: $gray-1;
+
+$border-color-1: $beige-60;
+$border-color-2: $beige-60;
+$border-color-3: $beige-60;
+$outer-border-color: $beige-60;
+
+$sidebar-color: $gray-1;
+
+$dashboard-profile-header-image: none;
+$dashboard-profile-header-color: $sandstone-25;
+$dashboard-profile-color: $gray-3;
+$dot-color: $beige-60;
+
+$course-bg-color: $gray-3;
+$course-bg-image: none;
+
+$course-profile-bg: $gray-1;
+$course-header-bg: transparentize($gray-1, .1);
+
+$sidebar-chapter-bg-top: transparentize($gray-1, .3);
+$sidebar-chapter-bg-bottom: transparentize($gray-1, .9);
+$sidebar-chapter-bg: $gray-2;
+$sidebar-active-image: $gray-3;
+
+$form-bg-color: $gray-1;
+$modal-bg-color: $gray-1;
+
+//-----------------
+//  CSS BG Images
+//-----------------
+$homepage-bg-image: '/static/themes/stanford/images/stanford-pano.jpg';
+
+$video-thumb-url: '/static/themes/stanford/images/stanford-video-thumb.png';
