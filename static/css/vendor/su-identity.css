@@ -5,8 +5,8 @@
  * Last edited: 4/19/2013 by Nate Hardison <nate@edx.org>
  */
 
-#su-header .container,
-#su-footer .container {
+#su-header .su-container,
+#su-footer .su-container {
   margin: 0 auto;
 }
 
@@ -28,8 +28,8 @@
           box-sizing: border-box;
 }
 
-#su-header .container:after,
-#su-footer .container:after {
+#su-header .su-container:after,
+#su-footer .su-container:after {
   clear: both;
 }
 
@@ -46,14 +46,14 @@
 }
 
 #su-footer,
-#su-footer .container {
+#su-footer .su-container {
   background: #8c1515;
   color: #e3dfd5;
   box-shadow: inset 0 4px 8px -2px rgba(0, 0, 0, 0.2); /* Horizontal offset , vertical offset, blur, internal spacing */
 }
 
 /* Prevent flush left */
-#su-header .container img {
+#su-header .su-container img {
   padding: 4px 0 0 10px;
 }
 
@@ -66,11 +66,11 @@
 }
 
 /* Prevent horizontal scroll bar */
-#su-footer .container {
+#su-footer .su-container {
   padding: 3px 7px 20px;
 }
 
-#su-footer .container .row {
+#su-footer .su-container .su-row {
   margin: 30px 0 0;
 }
 
@@ -143,7 +143,7 @@ Media queries
 
 @media screen and (min-width: 768px) {
   /* Prevent double background gradient */
-  #su-footer .container {
+  #su-footer .su-container {
     background:none;
     box-shadow:none;
   }
@@ -153,17 +153,17 @@ Media queries
   }
 
   /* Remove left padding */
-  #su-header .container img {
+  #su-header .su-container img {
     padding:4px 0 0;
   }
 
   /* Bootstrap style */
-  #su-header .container,
-  #su-footer .container {
+  #su-header .su-container,
+  #su-footer .su-container {
     width:724px;
   }
 
-  #su-footer .container .row {
+  #su-footer .su-container .su-row {
     margin:30px 0 0 -20px;
   }
   /* Footer single column */
@@ -219,8 +219,8 @@ Media queries
 
 @media screen and (min-width: 980px) {
   /* Bootstrap style */
-  #su-header .container,
-  #su-footer .container {
+  #su-header .su-container,
+  #su-footer .su-container {
     width:940px;
   }
 
@@ -235,8 +235,8 @@ Media queries
 
 @media screen and (min-width: 1200px) {
   /* Bootstrap style */
-  #su-header .container,
-  #su-footer .container {
+  #su-header .su-container,
+  #su-footer .su-container {
     width:1180px;
   }
 
