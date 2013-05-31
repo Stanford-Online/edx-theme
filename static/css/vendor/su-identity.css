@@ -235,6 +235,7 @@ Media queries
 
 @media screen and (min-width: 1200px) {
   /* Bootstrap style */
+  
   #su-header .su-container,
   #su-footer .su-container {
     width:1180px;

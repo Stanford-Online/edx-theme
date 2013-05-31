@@ -1,21 +1,23 @@
 ## mako
 <%! from django.core.urlresolvers import reverse %>
-<footer>
-  <nav>
-    <section class="top" style="border-bottom: 0;">
-      <section class="primary">
-        <a href="${reverse('tos')}">Terms of Service</a>
-        <a href="${reverse('tos')}#privacy">Privacy Policy</a>
-        <a href="${reverse('tos')}#honor">Honor Code</a>
-        <a href="${reverse('tos')}#copyright">Copyright</a>
-        <a href="${reverse('about_edx')}#contact">Contact</a>
-      </section>
-      <section class="social">
-        <span>Built on the edX platform.</span>
-      </section>
-    </section>
-  </nav>
-</footer>
+<div class="wrapper-footer">
+  <footer>
+    <div class="colophon">
+      <nav class="nav-colophon">
+        <ol>
+          <li><a href="${reverse('tos')}">Terms of Service</a></li>
+          <li><a href="${reverse('tos')}#privacy">Privacy Policy</a></li>
+          <li><a href="${reverse('tos')}#honor">Honor Code</a></li>
+          <li><a href="${reverse('tos')}#copyright">Copyright</a></li>
+          <li><a href="${reverse('about_edx')}#contact">Contact</a></li>
+        </ol>
+      </nav>
+    </div>
+    <div class="references">
+      <span>Built on the edX platform.</span>
+    </div>
+  </footer>
+</div>
 
 <div id="su-footer">
   <div class="su-container">
