@@ -117,9 +117,33 @@ $sidebar-active-image: $gray-3;
 $form-bg-color: $gray-1;
 $modal-bg-color: $gray-1;
 
+//TOP HEADER IMAGE MARGIN
+$header_image_margin: -77px;
+
+//FOOTER MARGIN
+$footer_margin: ($baseline/4) 0;
+
 //-----------------
 //  CSS BG Images
 //-----------------
 $homepage-bg-image: '../themes/stanford/images/stanford-pano.jpg';
 
+$login-banner-image: none;
+$register-banner-image: none;
+
 $video-thumb-url: '../themes/stanford/images/stanford-video-thumb.png';
+
+//-----------------
+//  Mixin Styles
+//-----------------
+@mixin login_register_h1_style {
+    clip: auto !important;
+    height: 50px;
+    width: 500px;
+    margin-top: 50px;
+}
+
+@mixin footer_references_style {
+    margin: 0 !important;
+    text-align: right;
+}
