@@ -55,6 +55,7 @@ $serif: $theme-serif-font, $serif;
 //-----------------
 
 $body-bg: $gray-1;
+$login-register-bg: $gray-1;
 $content-wrapper-bg: $gray-1;
 $header-image: none;
 $header-bg: transparentize(lighten($sandstone, 18.5%), .25);
@@ -77,6 +78,7 @@ $lighter-base-font-color: $gray-75;
 $very-light-text: $gray-1;
 
 $link-color: $dark-red;
+$link-color-d1: $dark-red;
 $link-hover: $cardinal-light;
 $selection-color-1: $cardinal-bg;
 $selection-color-2: $cardinal-bg;
