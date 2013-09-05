@@ -36,6 +36,9 @@
         <h2>FAQs</h2>
         <p><strong>Has Stanford joined the edX consortium?</strong><br />
         No.  We're partnering on the open source software.</p>
+        
+        <p><strong>What browsers are recommended for use with Stanford OpenEdX?</strong><br />
+        The latest versions of <a href="http://chrome.google.com/">Google Chrome</a>, <a href="http://www.mozilla.org/firefox">Mozilla Firefox</a>, and <a href="http://www.apple.com/safari/">Apple Safari</a>. (The site is currently not optimized for mobile use.)</p>
 
         <p><strong>If I'm a Stanford faculty member, and I'd like to use the platform to host content for an on-campus or public course, who should I get in touch with?</strong><br />
         <a href="mailto:courseops@class.stanford.edu">Click here to get in touch</a></p>
@@ -51,7 +54,7 @@
         <img src="${static.url('themes/stanford/images/dish.jpg')}" alt="Stanford Dish by Twilight" />
           <!-- Image Copyright owned by Stanford University -->
       </div>
-      <article>
+      <article id="stanford-OpenEdX-contact">
         <h2>Contact Information</h2>
         <p><strong>For general information email us at:</strong><br />
         <a href="mailto:contact@class.stanford.edu">contact@class.stanford.edu</a></p>
@@ -61,9 +64,6 @@
 
         <p><strong>For bug reports email us at:</strong><br />
         <a href="mailto:bugs@class.stanford.edu">bugs@class.stanford.edu</a></p>
-
-        <p><strong>When submitting a bug report, please include the following in the email body:</strong><br />
-        <script>document.write(navigator.userAgent);</script></p>
 
         <p><strong>For suggestions email us at:</strong><br />
         <a href="mailto:suggestions@class.stanford.edu">suggestions@class.stanford.edu</a></p>
@@ -76,7 +76,29 @@
 
         <p><strong>For questions about privacy-related issues email us at:</strong><br />
         <a href="mailto:privacy@class.stanford.edu">privacy@class.stanford.edu</a></p>
+
+        <p>&nbsp;</p>
+        <h2>Contact Coursera</h2>
+        <p><strong>Coursera Student Support Center:</strong><br />
+        <a href="http://help.coursera.org/" class="external">http://help.coursera.org/</a></p>
+        
+        <p>&nbsp;</p>
+        <h2>Contact NovoEd</h2>
+        <p><strong>NovoEd Support Center:</strong><br />
+        <a href="mailto:support@novoed.com" class="external">support@novoed.com</a></p>
       </article>
+      <script>
+        $(function() {
+          var ua = navigator.userAgent;
+          
+          $('#stanford-OpenEdX-contact a').each(function() {
+            var href = $(this).attr('href') + "?body=User Agent String: " + ua + " (this text is used for debugging.)";
+            if (!$(this).hasClass('external')) {
+              $(this).attr('href', href);
+            }
+          });
+        });
+      </script>
       <hr class="fade-right-hr-divider">
     </section>
   </section>
