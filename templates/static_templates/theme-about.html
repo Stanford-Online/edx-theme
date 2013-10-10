@@ -5,14 +5,50 @@
 
 <%block name="title"><title>About Stanford Online</title></%block>
 
+<%block name="js_extra">
+  <script type="text/javascript">
+    $(function() {
+      $('section.message').hide();
+      $('#about-menu a').removeClass('active');
+      window.scrollTo(0,0);
+      
+      if ( document.location.href.indexOf('#faq') > -1 ) {
+        $('section#faq').show();
+        $('#about-menu a.faq').addClass('active');
+      } else if ( document.location.href.indexOf('#contact') > -1 ) {
+        $('section#contact').show();
+        $('#about-menu a.contact').addClass('active');
+      } else if ( document.location.href.indexOf('#careers') > -1 ) {
+        $('section#careers').show();
+        $('#about-menu a.careers').addClass('active');
+      } else {
+        $('section#about').show();
+        $('#about-menu a.about').addClass('active');
+      }
+      
+      $('#about-menu a').click(function() {
+        event.preventDefault();
+        $('#about-menu a').removeClass('active');
+        $(this).addClass('active');
+        var clickId = "section" + $(this).attr('href');
+        $('section.message').hide();
+        $(clickId).show();
+      });
+    });
+  </script>
+</%block>
+
 <section class="container about">
-  <nav>
-    <a href="#about" class="active">About</a>
-    <a href="#faq">Faq</a>
-    <a href="#contact">Contact</a>
+  <nav id="about-menu">
+    <a href="#about" class="about active">About</a>
+    <a href="#faq" class="faq">Faq</a>
+    <a href="#careers" class="careers">Careers</a>
+    <a href="#contact" class="contact">Contact</a>
   </nav>
 
   <section class="vision">
+
+## About Section ##
     <section class="message left" id="about">
       <div class="photo">
         <img src="${static.url('themes/stanford/images/quad.jpg')}" alt="Stanford Quad with Hoover Tower" />
@@ -27,6 +63,8 @@
       <hr class="fade-right-hr-divider">
     </section>
 
+
+## FAQ Section ##
     <section class="message left" id="faq">
       <div class="photo">
         <img src="${static.url('themes/stanford/images/memchu.jpg')}" alt="Stanford Memorial Church Facade" />
@@ -49,6 +87,60 @@
       <hr class="fade-right-hr-divider">
     </section>
 
+
+## Careers Section ##
+    <section class="message left" id="careers">
+      <div class="photo">
+        <img src="${static.url('themes/stanford/images/tree-light.jpg')}" alt="Stanford Quad with Hoover Tower" />
+          <!-- Image Copyright owned by Giulio Gratta -->
+      </div>
+      <article>
+        <h2>Careers</h2>
+        
+        <h3><strong>Software Engineer</strong>, Office of the Vice Provost for Online Learning<br /><br /></h3>
+        
+        <p>
+          We are hiring an engineer to join Stanford Online's Platform team.  Stanford has the best, the biggest, and the most on-line courses on the Internet.  This team builds and operates the open-source platform
+          behind many of them.  Students on-campus and worldwide learn via our course materials and the online communities they create.
+        </p>
+        <p>
+          Technology is disrupting higher education.  We believe universities can benefit from this if it's done right.  Supporting basic education and computer science research is core to what we do.  We also believe
+          that universities should be in control of how this space evolves, and that an open-source platform is the best way to do that.
+        </p>
+        <p>
+          Our engineering team is small and productive: five engineers, one PM, and two course ops staff.  We do our own operations and QA.  We install several times per week.  We like being close to our customers
+          (faculty, staff, students) since that motivates the right kind of innovation.  We run a lightweight, mostly-Agile development process with quick daily standups, group planning, and frequent demos.  We work on
+          the Stanford Campus.
+        </p>
+        <p>
+          What we work on is mostly driven by our customers, but we also commit to the core edX platform repo.  We collaborate with other OpenEdX adopters, including Google.
+        </p>
+        <p>
+          Our technical stack is modern and sane:<br />
+          - Python/Django, Nginx, Celery<br />
+          - CSS/SASS, JS/jQuery/CoffeeScript<br />
+          - Relational (MySQL) and nosql (MongoDB) storage<br />
+          - Cloud hosted at Amazon: EC2, RDS, S3, ElasticCache<br />
+          - Jenkins, Gerrit, and Ansible
+        </p>
+        <p>
+          As an engineer on this team you'd be expected to work across the stack as needed.  We are looking for generalists.  If you are an engineer who sees technical variety and learning as fun challenges, then join us.
+        </p>
+        <p>
+          This is a two year fixed term position (100% FTE). The job is on the Stanford Campus, ie. being remote full-time isn't an option.  You'll need to successfully pass a background check and show you are eligible to
+          work in the US before coming on board.
+        </p>
+        <p>
+          <a href="https://stanford.taleo.net/careersection/2/jobdetail.ftl?job=17947" style="font-size: 1.25em;">
+            Apply Now
+          </a>
+        </p>
+      </article>
+      <hr class="fade-right-hr-divider">
+    </section>
+
+
+## Contact Section ##
     <section class="message left" id="contact">
       <div class="photo">
         <img src="${static.url('themes/stanford/images/dish.jpg')}" alt="Stanford Dish by Twilight" />
