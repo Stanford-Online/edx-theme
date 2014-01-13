@@ -26,7 +26,7 @@
         $('#about-menu a.about').addClass('active');
       }
       
-      $('#about-menu a').click(function() {
+      $('#about-menu a').click(function(event) {
         event.preventDefault();
         $('#about-menu a').removeClass('active');
         $(this).addClass('active');
@@ -38,7 +38,7 @@
   </script>
 </%block>
 
-<section class="container about">
+<section class="container about" style="width: auto;">
   <nav id="about-menu">
     <a href="#about" class="about active">About</a>
     <a href="#faq" class="faq">Faq</a>
@@ -96,13 +96,6 @@
       </div>
       <article>
         <h2>Careers</h2>
-        
-        <h3><strong>Software Engineer</strong>, Office of the Vice Provost for Online Learning<br /><br /></h3>
-        
-        <p>
-          We are hiring an engineer to join Stanford Online's Platform team.  Stanford has the best, the biggest, and the most on-line courses on the Internet.  This team builds and operates the open-source platform
-          behind many of them.  Students on-campus and worldwide learn via our course materials and the online communities they create.
-        </p>
         <p>
           Technology is disrupting higher education.  We believe universities can benefit from this if it's done right.  Supporting basic education and computer science research is core to what we do.  We also believe
           that universities should be in control of how this space evolves, and that an open-source platform is the best way to do that.
@@ -114,6 +107,14 @@
         </p>
         <p>
           What we work on is mostly driven by our customers, but we also commit to the core edX platform repo.  We collaborate with other OpenEdX adopters, including Google.
+        </p>
+        
+        <p>&nbsp;</p>
+
+        <h3><strong>Software Engineer</strong>, Office of the Vice Provost for Online Learning<br /><br /></h3>
+        <p>
+          We are hiring an engineer to join Stanford Online's Platform team.  Stanford has the best, the biggest, and the most on-line courses on the Internet.  This team builds and operates the open-source platform
+          behind many of them.  Students on-campus and worldwide learn via our course materials and the online communities they create.
         </p>
         <p>
           Our technical stack is modern and sane:<br />
@@ -131,7 +132,34 @@
           work in the US before coming on board.
         </p>
         <p>
-          <a href="https://stanford.taleo.net/careersection/2/jobdetail.ftl?job=17947" style="font-size: 1.25em;">
+          <a href="https://stanford.taleo.net/careersection/2/jobdetail.ftl?job=17947" style="font-size: 1.25em;padding: 5px;background-color: #820000;color: white;border-radius: 5px;">
+            Apply Now
+          </a>
+        </p>
+        
+        <p>&nbsp;</p>
+        
+        <h3><strong>Course Operations Specialist</strong>, Office of the Vice Provost for Online Learning<br /><br /></h3>
+        <p>
+          The Course Operations Specialist will be responsible for the bedrock of support to teaching staff (instructors and teaching assistants for all of our courses) for all courses using the OpenEdX platform at Stanford.
+          S/he will need to understand the ins and outs of the platform, and effectively communicate this knowledge, both in a one-on-one setting and by creating documentation. S/he will interact directly with faculty across
+          a range of disciplines, to understand their needs and how their material and assessments can be best presented online. This will be an opportunity to interact with world-class faculty, and work with them on
+          implementing best practices for online teaching in their courses.
+        </p>
+        <p>
+          On the student side, s/he will triage customer support email, create appropriate FAQs, and determine when a student issue really indicates a problem and needs to be escalated.  The successful candidate will reproduce
+          student and instructor-reported issues as needed, so that bugs can be crisply defined.
+        </p>
+        <p>
+          The Course Operations Specialist works as part of the OpenEdX engineering team. S/he must be comfortable acting as the "voice of the customer" in daily and weekly engineering meetings providing insight into faculty
+          and student issues with the platform.
+        </p>
+        <p>
+          This is a two year fixed term position (100% FTE). The job is on the Stanford Campus, ie. being remote full-time isn't an option.  You'll need to successfully pass a background check and show you are eligible to
+          work in the US before coming on board.
+        </p>
+        <p>
+          <a href="https://stanford.taleo.net/careersection/2/jobdetail.ftl?job=21944" style="font-size: 1.25em;padding: 5px;background-color: #820000;color: white;border-radius: 5px;">
             Apply Now
           </a>
         </p>
