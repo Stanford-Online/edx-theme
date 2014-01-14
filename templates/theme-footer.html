@@ -1,5 +1,8 @@
 ## mako
-<%! from django.core.urlresolvers import reverse %>
+<%! 
+  from django.core.urlresolvers import reverse 
+  from edxmako.shortcuts import marketing_link
+%>
 <div class="wrapper-footer">
   <footer>
     <div class="colophon">
@@ -11,6 +14,7 @@
           <li><a href="${reverse('tos')}#copyright">Copyright</a></li>
           <li><a href="${reverse('about_edx')}#careers">Careers</a></li>
           <li><a href="${reverse('about_edx')}#contact">Contact</a></li>
+          <li><a href="${marketing_link('FAQ')}">Help</a></li>
         </ol>
       </nav>
     </div>
