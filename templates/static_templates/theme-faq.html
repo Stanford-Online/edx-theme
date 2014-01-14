@@ -1,0 +1,29 @@
+<%! from django.core.urlresolvers import reverse %>
+<%namespace name='static' file='/static_content.html'/>
+
+<%inherit file="/main.html" />
+
+<%block name="title"><title>Stanford Online Help</title></%block>
+
+<section class="container about" style="width: auto;">
+  <nav id="about-menu">
+    <a href="#help" class="help">Technical FAQ</a>
+  </nav>
+
+  <section class="vision">
+    <section class="message left" id="help">
+      <h2>Trouble accessing a course</h2> 
+      <p><strong>If you are a Stanford student having trouble accessing ("Registering for") a Stanford on-campus course:</strong>
+      <ol>
+         <li><a href="/logout">Log out</a> of your OpenEdx account.</li>
+         <li>Navigate to the "About" page of your course</li>
+         <li>Click on the big "Register" button, and you should be able to register for your course.  You may be asked to authenticate with WebAuth first.</li>
+      </ol>
+      </p>
+      <h2>For general technical support</h2>
+        <p><strong>Email us at:</strong><br />
+        <a href="mailto:techsupport@class.stanford.edu">techsupport@class.stanford.edu</a></p>
+    </section>
+  </section>
+
+</section>
