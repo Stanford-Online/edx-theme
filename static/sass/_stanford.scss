@@ -185,7 +185,7 @@ $footer_margin: ($baseline/4) 0;
 //-----------------
 //  CSS BG Images
 //-----------------
-$homepage-bg-image: '../themes/stanford/images/stanford-pano.jpg';
+$homepage-bg-image: url('../themes/stanford/images/stanford-pano.jpg');
 
 $login-banner-image: none;
 $register-banner-image: none;
