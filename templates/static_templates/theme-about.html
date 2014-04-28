@@ -18,9 +18,11 @@
       } else if ( document.location.href.indexOf('#contact') > -1 ) {
         $('section#contact').show();
         $('#about-menu a.contact').addClass('active');
-      } else if ( document.location.href.indexOf('#careers') > -1 ) {
-        $('section#careers').show();
-        $('#about-menu a.careers').addClass('active');
+/*
+ *      } else if ( document.location.href.indexOf('#careers') > -1 ) {
+ *      $('section#careers').show();
+ *      $('#about-menu a.careers').addClass('active');
+ */
       } else {
         $('section#about').show();
         $('#about-menu a.about').addClass('active');
@@ -89,6 +91,7 @@
 
 
 ## Careers Section ##
+<%doc>
     <section class="message left" id="careers">
       <div class="photo">
         <img src="${static.url('themes/stanford/images/tree-light.jpg')}" alt="Stanford Quad with Hoover Tower" />
@@ -167,6 +170,7 @@
       </article>
       <hr class="fade-right-hr-divider">
     </section>
+</%doc>
 
 
 ## Contact Section ##
