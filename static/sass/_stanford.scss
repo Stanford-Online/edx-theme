@@ -197,9 +197,9 @@ $video-thumb-url: '../themes/stanford/images/stanford-video-thumb.png';
 //-----------------
 @mixin login_register_h1_style {
     clip: auto !important;
-    height: 50px;
-    width: 550px;
-    margin-top: 50px;
+    margin-top: 25px;
+    width: 750px;
+    top: 0px !important;
 }
 
 @mixin footer_references_style {
