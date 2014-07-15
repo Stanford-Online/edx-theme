@@ -11,16 +11,14 @@ staticfiles paths properly to point to these files.
 
 Theme Authoring
 ===============
-The proposed theming solution for edX (see [this pull](https://github.com/edx/edx-platform/pull/1907)
-for more details) provides a number of hooks for themes to adjust
-both HTML and CSS to their liking.
+The proposed theming solution for edX provides a number of hooks for
+themes to adjust both HTML and CSS to their liking.
 
 
 License
 =======
 
 The code in this repo is licensed under the Apache 2.0 License.
-See [LICENSE.txt](LICENSE.txt) for more info.  The copyright for the Stanford
-brands and assets (e.g. logo and images) are held by Stanford
+See [LICENSE.txt](LICENSE.txt) for more info.  The copyright for the
+Stanford brands and assets (e.g. logo and images) are held by Stanford
 University.
-
