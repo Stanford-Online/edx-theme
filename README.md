@@ -14,6 +14,7 @@ Theme Authoring
 The proposed theming solution for edX provides a number of hooks for
 themes to adjust both HTML and CSS to their liking.
 
+See the [the relevant wiki page](https://github.com/edx/edx-platform/wiki/Stanford-Theming) on how to apply the theme.
 
 License
 =======
