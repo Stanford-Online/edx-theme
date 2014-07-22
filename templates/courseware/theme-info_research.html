@@ -1,1 +1,7 @@
-          <p>We encourage you to review our <a href="/tos"><strong>Terms of Service</strong></a> and <a href="/tos#privacy"><strong>Privacy Policy</strong></a> before beginning the course.</p>
+<%! from django.utils.translation import ugettext as _ %>
+          <p>${_('We encourage you to review our {tos_link_start}Terms of Service{link_end} and {privacy_link_start}Privacy Policy{link_end} before beginning the course.').format(
+              tos_link_start='<a href="/tos"><strong>',
+              privacy_link_start='<a href="/tos#privacy"><strong>',
+              link_end='</strong></a>'
+            )}
+          </p>

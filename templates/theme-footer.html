@@ -8,20 +8,20 @@
     <div class="colophon">
       <nav class="nav-colophon">
         <ol>
-          <li><a href="${reverse('tos')}">Terms of Service <br />(Revised 06/14/14)</a></li>
-          <li><a href="${reverse('tos')}#privacy">Privacy Policy <br />(Revised 06/14/14)</a></li>
-          <li><a href="${reverse('tos')}#honor">Honor Code</a></li>
-          <li><a href="${reverse('tos')}#copyright">Copyright</a></li>
-          <li><a href="${reverse('about_edx')}#careers">Careers</a></li>
-          <li><a href="${reverse('about_edx')}#contact">Contact</a></li>
-          <li><a href="https://stanfordonline.zendesk.com/hc">Help</a></li>
+          <li><a href="${reverse('tos')}">${_('Terms of Service')} <br />(${_('Revised 06/14/14')})</a></li>
+          <li><a href="${reverse('tos')}#privacy">${_('Privacy Policy')} <br />(${_('Revised 06/14/14')})</a></li>
+          <li><a href="${reverse('tos')}#honor">${_('Honor Code')}</a></li>
+          <li><a href="${reverse('tos')}#copyright">${_('Copyright')}</a></li>
+          <li><a href="${reverse('about_edx')}#careers">${_('Careers')}</a></li>
+          <li><a href="${reverse('about_edx')}#contact">${_('Contact')}</a></li>
+          <li><a href="https://stanfordonline.zendesk.com/hc">${_('Help')}</a></li>
         </ol>
       </nav>
     </div>
     <div class="references">
       <a href="http://openedx.org">
-        <span class="sr">Powered by Open edX</span>
-        <img src="https://files.edx.org/openedx-logos/edx-openedx-logo-tag-light.png" height="40" alt="Powered by Open edX"/>
+        <span class="sr">${_('Powered by {platform_name}').format(platform_name='Open edX')}</span>
+        <img src="https://files.edx.org/openedx-logos/edx-openedx-logo-tag-light.png" height="40" alt="${_('Powered by {platform_name}').format(platform_name='Open edX')}"/>
       </a>
     </div>
   </footer>
