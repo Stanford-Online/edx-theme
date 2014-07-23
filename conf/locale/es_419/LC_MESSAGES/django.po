@@ -3,16 +3,15 @@
 # This file is distributed under the GNU AFFERO GENERAL PUBLIC LICENSE.
 # 
 # Translators:
-# Translators:
 # Giulio Gratta, 2014
-# kluo <kevluo@edx.org>, 2014
-# nthaniel <nthaniel@stanford.edu>, 2014
+# Kevin Luo, 2014
+# Nathaniel Edwards, 2014
 msgid ""
 msgstr ""
 "Project-Id-Version: stanford-openedx\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-07-15 21:26+0000\n"
-"PO-Revision-Date: 2014-07-22 19:24+0000\n"
+"PO-Revision-Date: 2014-07-23 09:51+0000\n"
 "Last-Translator: kluo <kevluo@edx.org>\n"
 "Language-Team: Spanish (Latin America) (http://www.transifex.com/projects/p/stanford-openedx/language/es_419/)\n"
 "MIME-Version: 1.0\n"
@@ -43,11 +42,7 @@ msgid ""
 "\n"
 "              We're sorry, %(PLATFORM_NAME)s enrollment is not available in your region\n"
 "            "
-msgstr ""
-
-#: templates/registration/password_reset_confirm.html:73
-msgid "The following errors occured while processing your registration: "
-msgstr ""
+msgstr "\nLo sentimos, las inscripciones a %(PLATFORM_NAME)s no están disponibles en su región"
 
 #: templates/registration/password_reset_confirm.html:83
 #, python-format
@@ -55,14 +50,7 @@ msgid ""
 "\n"
 "              Someone has been made aware of this issue. Please try again shortly. Please %(start_link)scontact us%(end_link)s about any concerns you have.\n"
 "            "
-msgstr ""
-
-#: templates/registration/password_reset_confirm.html:90
-msgid ""
-"Please enter your new password twice so we can verify you typed it in "
-"correctly. <br /> Required fields are noted by <strong "
-"class=\"indicator\">bold text and an asterisk (*)</strong>."
-msgstr ""
+msgstr "\nAlguien ya ha sido alertado de esta situación. Por favor reintente en algunos minutos. Por favor %(start_link)scontáctenos%(end_link)s para transmitirnos cualquier inquietud."
 
 #: templates/registration/password_reset_confirm.html:119
 #, python-format
@@ -70,7 +58,7 @@ msgid ""
 "\n"
 "          The password reset link was invalid, possibly because the link has already been used.  Please return to the %(start_link)slogin page%(end_link)s and start the password reset process again.\n"
 "        "
-msgstr ""
+msgstr "\nEl vínculo de restablecimiento de contraseña es inválido, posiblemente este vínculo ya fue utilizado. Por favor regrese a la página de %(start_link)sinicio de sesión%(end_link)s y comience de nuevo el proceso de restablecer contraseña."
 
 #: templates/registration/password_reset_confirm.html:135
 #, python-format
@@ -78,19 +66,19 @@ msgid ""
 "\n"
 "            View our %(start_link)shelp section for contact information and answers to commonly asked questions%(end_link)s\n"
 "          "
-msgstr ""
+msgstr "\nVisite nuestra %(start_link)ssección de ayuda para ver la información de contacto y las respuestas a las preguntas mas comunes%(end_link)s"
 
 #: templates/registration/password_reset_email.html:2
 #, python-format
 msgid ""
 "You're receiving this e-mail because you requested a password reset for your"
 " user account at %(platform_name)s."
-msgstr ""
+msgstr "Usted ha recibido este correo electrónico porque solicitó el restablecimiento de su contraseña de usuario para %(platform_name)s."
 
 #: templates/registration/password_reset_email.html:13
 #, python-format
 msgid "The %(platform_name)s Team"
-msgstr ""
+msgstr "El equipo de %(platform_name)s"
 
 #: common/lib/xmodule/xmodule/capa_base.py
 msgid ""
@@ -100,44 +88,44 @@ msgstr "Sus respuestas han sido guardadas pero no calificadas. Haga clic en 'Env
 msgid ""
 "By exploring the course, you are agreeing to our Terms of Service. Please "
 "read them carefully."
-msgstr ""
+msgstr "Al explorar el curso, usted acepta nuestros Términos de Servicio. Favor de leerlos con cuidado."
 
 msgid ""
 "By {end_time}, you must manually click the 'Final Submit' button below!"
-msgstr ""
+msgstr "Para {end_time}, ¡debe hacer clic manualmente en el botón \\\"Enviar su respuesta final\\\" abajo!"
 
 msgid ""
 "Have <strong>general questions about {platform_name}</strong>? You can find "
 "lots of helpful information in the {platform_name} {link_start}Help "
 "Center{link_end}."
-msgstr ""
+msgstr "¿Tiene <strong>preguntas generales sobre la plataforma {platform_name}</strong>? Puede encontrar mucha información valiosa en la sección de {link_start}Centro de Ayuda{link_end} de {platform_name}."
 
 msgid ""
 "I agree to the {link_start1}Terms of Service{link_end} and "
 "{link_start2}Privacy Policy{link_end}"
-msgstr ""
+msgstr "Acepto los {link_start1}Términos del Servicio{link_end} y la {link_start2}Política de Privacidad{link_end}"
 
 msgid ""
 "Needed for any certificates you may earn <strong>(cannot be changed "
 "later)</strong>"
-msgstr ""
+msgstr "Se requiere para cualquier certificado que pueda obtener <strong>(No podrá ser cambiada después)</strong>"
 
 msgid ""
 "Non-registered mode.  {tag_start}Register{tag_end} to save your course "
 "progress."
-msgstr ""
+msgstr "Modo no registrado. {tag_start}Regístrese{tag_end} para guardar su progreso en el curso."
 
 msgid ""
 "Please enter your email address below, and we will email instructions for "
 "setting a new password."
-msgstr ""
+msgstr "Por favor ingrese su dirección de correo electrónico y le enviaremos las instrucciones para restablecer su contraseña."
 
 msgid ""
 "Thank you for your inquiry or feedback. We typically respond to a request "
 "within three business days. In the meantime, please review our "
 "{link_start}Help Center articles{link_end}, where answers to many common "
 "questions have been posted."
-msgstr ""
+msgstr "Gracias por sus preguntas y aportes. Generalmente respondemos cada solicitud en tres días hábiles. Entre tanto, por favor revise nuestra sección de {link_start}artículos del Centro de Ayuda{link_end}, donde se ha publicado respuestas a muchas preguntas comunes."
 
 msgid ""
 "\n"
@@ -146,52 +134,52 @@ msgid ""
 "    Spam or Trash), your account may be under a different email address. Try %(start_link)slogging\n"
 "    in%(end_link)s again with some other email addresses you maintain.\n"
 "  "
-msgstr ""
+msgstr "\nEl sistema está buscando su cuenta. Debe usted recibir un email con instrucciones para restablecer su contraseña pronto. Si no lo ve dentro de unos pocos minutos (y no está en su carpeta de correo no deseado), es posible que su cuenta es asociada con otra dirección de correo electrónico. Trate de %(start_link)singresar%(end_link)s de nuevo con algunas otras direcciones que usted mantenga."
 
 msgid "At {start_time}, you started this exam."
-msgstr ""
+msgstr "Usted inició el examen a {start_time}."
 
 msgid "By exploring the course, you are agreeing to our"
-msgstr ""
+msgstr "Al explorar el curso, usted acepta nuestros"
 
 msgid "Create your account"
-msgstr ""
+msgstr "Crear su cuenta"
 
 msgid "Create your {platform_name} learning and research account!"
-msgstr ""
+msgstr "Crear su cuenta de aprendizaje y investigaciones con {platform_name}!"
 
 msgid "Explore Course"
-msgstr ""
+msgstr "Explorar el curso"
 
 msgid "Final Submit"
-msgstr ""
+msgstr "Enviar su respuesta final"
 
 msgid "HOW TO USE DISCUSSIONS"
-msgstr ""
+msgstr "COMO USAR LAS DISCUSIONES"
 
 msgid "Needed for any Statements of Accomplishment you may earn"
-msgstr ""
+msgstr "Se requiere para cualquier declaración de logro que pueda obtener"
 
 msgid "Password reset initiated"
-msgstr ""
+msgstr "Restablecimiento de contraseña iniciado"
 
 msgid "Please read them carefully."
-msgstr ""
+msgstr "Por favor leerlos con cuidado."
 
 msgid "Public courses from {university_name}!"
-msgstr ""
+msgstr "Cursos públicos de {university_name}!"
 
 msgid "Self Assessment"
-msgstr ""
+msgstr "Autoevaluación"
 
 msgid "This should be the email address you used to register with {platform}"
-msgstr ""
+msgstr "Esta debe ser la dirección de correo electrónico que uso para registrarse con {platform}"
 
 msgid "Welcome to the {platform_name} Learning and Research Community"
-msgstr ""
+msgstr "Bienvenido a la Comunidad de Aprendizaje e Investigación en Línea de {platform_name}"
 
 msgid "Welcome! Register below to create your %(platform_name)s account"
-msgstr ""
+msgstr "Bienvenido! Regístrese a continuación para crear su cuenta en %(platform_name)s"
 
 #: maintenance/index.html:5 maintenance/index.html:79
 msgid "Down for Maintenance"
@@ -201,7 +189,7 @@ msgstr "En Mantenimiento"
 msgid ""
 "We are currently performing system maintenance, please try again in a little"
 " while."
-msgstr ""
+msgstr "Actualmente estamos realizando tareas de mantenimiento del sistema. Por favor, inténtelo de nuevo después de un poco."
 
 #: templates/theme-footer.html:11 templates/theme-footer.html:12
 msgid "Revised 06/14/14"
@@ -215,7 +203,7 @@ msgstr "Carreras"
 
 #: templates/theme-footer.html:23 templates/theme-footer.html:24
 msgid "Powered by {platform_name}"
-msgstr ""
+msgstr "Impulsado por {platform_name}"
 
 #: templates/theme-header.html:22
 msgid "{platform_name}, Courses List"
@@ -226,7 +214,7 @@ msgid ""
 "We encourage you to review our {tos_link_start}Terms of Service{link_end} "
 "and {privacy_link_start}Privacy Policy{link_end} before beginning the "
 "course."
-msgstr ""
+msgstr "Le recomendamos que revise nuestros {tos_link_start}Términos de Servicio{link_end} y {privacy_link_start}Política de Privacidad{link_end} antes de comenzar el curso."
 
 #: templates/static_templates/theme-about.html:10
 msgid "About {PLATFORM_NAME}"
@@ -235,14 +223,14 @@ msgstr "Acerca de {PLATFORM_NAME}"
 #: templates/static_templates/theme-about.html:58
 #: templates/static_templates/theme-about.html:108
 msgid "Stanford Quad with Hoover Tower"
-msgstr ""
+msgstr "Stanford Quad con la torre Hoover"
 
 #: templates/static_templates/theme-about.html:64
 msgid ""
 "{Stanford} is developing new online course material in order to improve on-"
 "campus courses and provide broader public access to exciting learning "
 "opportunities."
-msgstr ""
+msgstr "{Stanford} está desarrollando nuevos cursos en línea a fin de mejorar los cursos en el campus y facilitar el acceso del público a interesantes oportunidades de aprendizaje."
 
 #: templates/static_templates/theme-about.html:65
 msgid ""
@@ -250,7 +238,7 @@ msgid ""
 "Learning is running and developing on an instance of the "
 "{platform_link_start}OpenEdX platform{link_end}. More details are in "
 "{details_link_start}this article{link_end}."
-msgstr ""
+msgstr "El equipo de ingenieros de la Oficina del Vice Provost para el Aprendizaje en Línea de Stanford está desarrollando una instancia de la {platform_link_start}plataforma de OpenEdX{link_end}. Hay más detalles en {details_link_start}este artículo{link_end}."
 
 #: templates/static_templates/theme-about.html:79
 msgid "Stanford Memorial Church Facade"
@@ -262,54 +250,54 @@ msgstr "Preguntas Frecuentes"
 
 #: templates/static_templates/theme-about.html:84
 msgid "Has {Stanford} joined the {edX} consortium?"
-msgstr ""
+msgstr "Ha {Stanford} entrado en el consorcio de {edX}?"
 
 #: templates/static_templates/theme-about.html:85
 msgid "No.  We're partnering on the open source software."
-msgstr ""
+msgstr "No. Estamos desarrollando el software de código abierto juntos."
 
 #: templates/static_templates/theme-about.html:87
 msgid "What browsers are recommended for use with {platform_name}?"
-msgstr ""
+msgstr "¿Qué navegador se recomienda para {platform_name}?"
 
 #: templates/static_templates/theme-about.html:88
 msgid ""
 "The latest versions of {chrome_link}, {firefox_link}, and {safari_link}. "
 "(The site is currently not optimized for mobile use.)"
-msgstr ""
+msgstr "Las versiones más recientes de {chrome_link}, {firefox_link}, y {safari_link}. (El sitio no está optimizado para dispositivos móviles.)"
 
 #: templates/static_templates/theme-about.html:95
 msgid ""
 "If I'm a {Stanford} faculty member, and I'd like to use the platform to host"
 " content for an on-campus or public course, who should I get in touch with?"
-msgstr ""
+msgstr "Si soy un miembro de la facultad de {Stanford}, y me gustaría utilizar la plataforma para un curso en el campus o en línea, ¿a quién debería contactar?"
 
 #: templates/static_templates/theme-about.html:96
 #: templates/static_templates/theme-about.html:99
 msgid "Click here to get in touch"
-msgstr ""
+msgstr "Haga clic aquí para ponerse en contacto."
 
 #: templates/static_templates/theme-about.html:98
 msgid ""
 "If I'm at another university, and I'd like to find out about using the open "
 "source platform, who should I get in touch with?"
-msgstr ""
+msgstr "Si soy un miembro de la facultad de otra universidad, y me gustaría saber sobre el uso de la plataforma de código abierto, ¿a quién debería contactar?"
 
 #: templates/static_templates/theme-about.html:159
 msgid "Stanford Dish by Twilight"
-msgstr ""
+msgstr "El radiotelescopio y estribaciones de Stanford en el crepúsculo"
 
 #: templates/static_templates/theme-about.html:163
 msgid "Technical Support, Suggestions, and Platform Bugs"
-msgstr ""
+msgstr "Apoyo Técnico, Sugestiones, y Errores en la Plataforma"
 
 #: templates/static_templates/theme-about.html:164
 msgid "For Technical Support, to make suggestions or to report platform bugs:"
-msgstr ""
+msgstr "Para solicitar Apoyo Técnico, hacer una sugestión, o informarnos de un error:"
 
 #: templates/static_templates/theme-about.html:165
 msgid "Use the \"Help\" tab at the top left of the page."
-msgstr ""
+msgstr "Utilice la pestaña \"Ayuda\" en la parte superior izquierda de la página."
 
 #: templates/static_templates/theme-about.html:168
 msgid "Additional Contact Information"
@@ -327,13 +315,17 @@ msgstr "Para preguntas de derechos de autor, envíe un correo electrónico a:"
 msgid "For disability-related questions email us at:"
 msgstr "Para preguntas acerca de la discapacidad, envíe un correo electrónico a:"
 
+#: templates/static_templates/theme-about.html:178
+msgid "For questions about privacy-related issues email us at:"
+msgstr "Para preguntas acerca de la privacidad, envía un correo electrónico a:"
+
 #: templates/static_templates/theme-about.html:182
 msgid "Contact {Coursera}"
 msgstr "Contacto con {Coursera}"
 
 #: templates/static_templates/theme-about.html:183
 msgid "{Coursera} Student Support Center:"
-msgstr "Centro de apoyo a los estudiantes {Coursera}"
+msgstr "Centro de apoyo a los estudiantes de {Coursera}"
 
 #: templates/static_templates/theme-about.html:187
 msgid "Contact {NovoEd}"
@@ -341,12 +333,12 @@ msgstr "Contacto con {NovoEd}"
 
 #: templates/static_templates/theme-about.html:188
 msgid "{NovoEd} Support Center:"
-msgstr "Centro de apoyo a los estudiantes {NovoEd}"
+msgstr "Centro de apoyo a los estudiantes de {NovoEd}"
 
 #: templates/static_templates/theme-about.html:196
 msgid ""
 "Please do not delete, this text helps us help you. - {platform_name} Team"
-msgstr "Por favor no borre este texto. Nos ayuda a ayudarle. - Equipo {platform_name}"
+msgstr "Por favor no borre este texto. Nos ayuda a ayudarle. - Equipo de {platform_name}"
 
 #: templates/static_templates/theme-embargo.html:7
 msgid ""
