@@ -1,52 +1,26 @@
 ## mako
-<%! 
-  from django.core.urlresolvers import reverse
-  from django.utils.translation import ugettext as _
-  from edxmako.shortcuts import marketing_link
-%>
+<%! from django.core.urlresolvers import reverse %>
+<%namespace name='static' file='/static_content.html'/>
+<%! from datetime import datetime %>
+<%! from pytz import UTC %>
+
 <div class="wrapper-footer">
   <footer>
     <div class="colophon">
       <nav class="nav-colophon">
         <ol>
-          <li><a href="${reverse('tos')}">${_('Terms of Service')} <br />(${_('Revised 06/14/14')})</a></li>
-          <li><a href="${reverse('tos')}#privacy">${_('Privacy Policy')} <br />(${_('Revised 06/14/14')})</a></li>
-          <li><a href="${reverse('tos')}#honor">${_('Honor Code')}</a></li>
-          <li><a href="${reverse('tos')}#copyright">${_('Copyright')}</a></li>
-          <li><a href="${reverse('about_edx')}#careers">${_('Careers')}</a></li>
-          <li><a href="${reverse('about_edx')}#contact">${_('Contact')}</a></li>
-          <li><a href="https://stanfordonline.zendesk.com/hc">${_('Help')}</a></li>
+          <li><a href="${reverse('tos')}">Terms of Service</a></li>
+          <li><a href="${reverse('tos')}#privacy">Privacy Policy</a></li>
+          <li><a href="${reverse('tos')}#honor">Honor Code</a></li>
+          <li><a href="${reverse('tos')}#copyright">Copyright</a></li>
+          <li><a href="${reverse('about_edx')}#careers">Careers</a></li>
+          <li><a href="${reverse('about_edx')}#contact">Contact</a></li>
+          <li><a href="${marketing_link('FAQ')}">Help</a></li>
         </ol>
       </nav>
     </div>
     <div class="references">
-      <a id="stanford-footer-edx-image" href="http://openedx.org">
-        <span class="sr">${_('Powered by {platform_name}').format(platform_name='Open edX')}</span>
-      </a>
+      <span>Built on <a href="http://code.edx.org">OpenEdX</a>.</span>
     </div>
   </footer>
-</div>
-
-<div id="su-footer">
-  <div class="su-container">
-    <div class="su-row">
-      <div id="su-footer-logo" class="span2">
-        <a href="http://www.stanford.edu">
-          <img src="https://www.stanford.edu/su-identity/images/footer-stanford-logo@2x.png" alt="Stanford University" width="105" height="49"/>
-        </a>
-      </div>
-      <div id="su-footer-text" class="span10">
-        <ul>
-          <li class="home"><a href="http://www.stanford.edu">SU Home</a></li>
-          <li class="maps alt"><a href="http://visit.stanford.edu/plan/maps.html">Maps &amp; Directions</a></li>
-          <li class="search-stanford"><a href="http://www.stanford.edu/search/">Search Stanford</a></li>
-          <li class="terms alt"><a href="http://www.stanford.edu/site/terms.html">Terms of Use</a></li>
-          <li class="copyright"><a href="http://www.stanford.edu/site/copyright.html">Copyright Complaints</a></li>
-        </ul>
-        <div class="clear"></div>
-        <p class="copyright vcard">&copy; <span class="fn org">Stanford University</span>, <span class="adr"> <span class="locality">Stanford</span>, <span class="region">California</span> <span class="postal-code">94305</span> </span></p>
-      </div>
-      <div style="clear: both;"></div>
-    </div>
-  </div>
 </div>

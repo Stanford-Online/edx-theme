@@ -1,44 +1,10 @@
 ## mako
-<%!
-  from django.core.urlresolvers import reverse
-  from django.utils.translation import ugettext as _
-%>
+<%! from django.core.urlresolvers import reverse %>
 <%namespace name='static' file='/static_content.html'/>
 <%inherit file="/navigation.html"/>
 
-## Toss the Stanford brand bar on top of the page
-<%block name="navigation_top">
-  <div id="su-header">
-    <div class="su-container">
-      <a href="http://www.stanford.edu">
-        <img src="https://www.stanford.edu/su-identity/images/brandbar-stanford-logo@2x.png" alt="Stanford University" width="152" height="23">
-      </a>
-    </div>
-  </div>
-</%block>
-
 ## TODO: this will eventually be moved to the Sass
 <%block name="navigation_logo">
-  <img src="${static.url('themes/stanford/images/stanford-S-logo.png')}" height="35" alt="${_('{platform_name}, Courses List').format(platform_name='Stanford Online')}" />
-</%block>
-
-## We don't want extra links inside the navigation dropdown
-<%block name="navigation_dropdown_menu_links" />
-
-## When unauthenticated, only show the about page link
-<%block name="navigation_global_links">
-  <li class="nav-global-01">
-    <a href="${marketing_link('ABOUT')}">About</a>
-  </li>
-</%block>
-
-## When authenticated, show both the about page and find courses
-<%block name="navigation_global_links_authenticated">
-  <li class="nav-global-01">
-    <a href="${marketing_link('ABOUT')}">${_('About')}</a>
-  </li>
-  <li class="nav-global-02">
-    <a href="${marketing_link('COURSES')}">${_('Find Courses')}</a>
-  </li>
+  <img src="${static.url('themes/default/images/OpenEdXLogo.png')}" height="50" alt="Home Page" />
 </%block>
 
