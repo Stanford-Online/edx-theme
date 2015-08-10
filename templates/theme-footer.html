@@ -1,8 +1,12 @@
 ## mako
-<%! from django.core.urlresolvers import reverse %>
+<%!
+  from django.core.urlresolvers import reverse
+  from django.utils.translation import ugettext as _
+%>
 <%namespace name='static' file='/static_content.html'/>
-<%! from datetime import datetime %>
-<%! from pytz import UTC %>
+<%!
+  from datetime import date
+%>
 
 <div class="wrapper-footer">
   <footer>
@@ -21,6 +25,14 @@
     </div>
     <div class="references">
       <span>Built on <a href="http://code.edx.org">OpenEdX</a>.</span>
+    </div>
+
+    <div class="copyright">
+        <p><span>
+            ${_('Copyright {year}. All rights reserved.').format(
+                year=date.today().year
+            )}
+        </span></p>
     </div>
   </footer>
 </div>

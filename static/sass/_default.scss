@@ -206,3 +206,32 @@ $video-thumb-url: '../themes/default/images/edx.png';
     margin: 0 !important;
     text-align: right;
 }
+
+//-----------------
+// Footer Styling
+//-----------------
+footer {
+    max-width: 1180px;
+    margin: 0 auto;
+
+    .colophon {
+        width: 80%;
+        float: left;
+
+        .nav-colophon li {
+            display: inline-block;
+            height: 35px;
+            float: left;
+            margin: 0 20px 20px 0;
+        }
+    }
+
+    .references {
+        width: 15%;
+        float: right;
+    }
+
+    .copyright {
+        clear: both;
+    }
+}
