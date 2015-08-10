@@ -207,28 +207,40 @@ $video-thumb-url: '../themes/default/images/edx.png';
     text-align: right;
 }
 
+
+//-----------------
+// Override CSS
+//-----------------
+html {
+    background-color: $secondary-25 !important;
+}
+
 //-----------------
 // Footer Styling
 //-----------------
-footer {
-    max-width: 1180px;
-    margin: 0 auto;
+.wrapper-footer {
+    box-shadow: none !important;
+    
+    footer {
+        max-width: 1180px;
+        margin: 0 auto;
 
-    .colophon {
-        width: 80%;
-        float: left;
-
-        .nav-colophon li {
-            display: inline-block;
-            height: 35px;
+        .colophon {
+            width: 80%;
             float: left;
-            margin: 0 20px 20px 0;
-        }
-    }
 
-    .references {
-        width: 15%;
-        float: right;
+            .nav-colophon li {
+                display: inline-block;
+                height: 35px;
+                float: left;
+                margin: 0 20px 20px 0;
+            }
+        }
+
+        .references {
+            width: 15%;
+            float: right;
+        }
     }
 
     .copyright {
