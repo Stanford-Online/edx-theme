@@ -216,6 +216,17 @@ html {
 }
 
 //-----------------
+// Header Styling
+//-----------------
+.home>header {
+    height: 500px;
+
+    .outer-wrapper {
+        padding: 120px 0 !important;
+    }
+}
+
+//-----------------
 // Footer Styling
 //-----------------
 .wrapper-footer {
