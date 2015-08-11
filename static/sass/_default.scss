@@ -258,3 +258,15 @@ html {
         clear: both;
     }
 }
+
+//-----------------
+// TOS Styling
+//-----------------
+section.tos {
+    box-sizing: border-box;
+    padding: 0 50px;
+
+    .print {
+        margin: 50px 0;
+    }
+}
