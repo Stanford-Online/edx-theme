@@ -24,3 +24,9 @@ License
 
 The code in this repo is licensed under the Apache 2.0 License.
 See [LICENSE.txt](LICENSE.txt) for more info.
+
+
+## DEPRECATED
+
+This repository has been deprecated, in favor of
+[Comprehensive Theming](https://github.com/Stanford-Online/openedx-themes).
